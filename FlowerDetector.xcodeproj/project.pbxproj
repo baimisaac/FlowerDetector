@@ -399,8 +399,11 @@
 				DEVELOPMENT_TEAM = 6UG68T5QFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+<<<<<<< HEAD
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Library usage.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
+=======
+>>>>>>> 512c5a5388c9b85090ee655900769132962c7364
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,8 +433,11 @@
 				DEVELOPMENT_TEAM = 6UG68T5QFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+<<<<<<< HEAD
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Library usage.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use.";
+=======
+>>>>>>> 512c5a5388c9b85090ee655900769132962c7364
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

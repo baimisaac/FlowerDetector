@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import SwiftUI
 
 struct ContentView: View {
@@ -47,3 +48,29 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+=======
+//
+//  ContentView.swift
+//  FlowerDetector
+//
+//  Created by STDC_13 on 27/11/2024.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+>>>>>>> 512c5a5388c9b85090ee655900769132962c7364
