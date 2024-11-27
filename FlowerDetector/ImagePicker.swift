@@ -35,12 +35,12 @@ struct ImagePicker: UIViewControllerRepresentable {
         }
 
         func detectFlower(image: UIImage) {
-            guard let model = try? VNCoreMLModel(for: FlowerDetect().model) else {
-                parent.detectionResult = "Failed to load model"
+            guard let ciImage = CIImage(image: image) else {
+                parent.detectionResult = "Failed to create CIImage"
                 return
             }
 
-            let request = VNCoreMLRequest(model: model) { [weak self] request, error in
+            let request = VNCoreMLRequest(model: try! VNCoreMLModel(for: FlowerDetect().model)) { [weak self] request, error in
                 guard let results = request.results as? [VNClassificationObservation] else {
                     self?.parent.detectionResult = "Failed to process image"
                     return
@@ -53,11 +53,6 @@ struct ImagePicker: UIViewControllerRepresentable {
                 }
             }
 
-            guard let ciImage = CIImage(image: image) else {
-                parent.detectionResult = "Failed to create CIImage"
-                return
-            }
-
             let handler = VNImageRequestHandler(ciImage: ciImage)
 
             do {
@@ -68,3 +63,4 @@ struct ImagePicker: UIViewControllerRepresentable {
         }
     }
 }
+

@@ -1,3 +1,11 @@
+//
+//  LiveDetectionView.swift
+//  FlowerDetector
+//
+//  Created by STDC_13 on 27/11/2024.
+//
+
+
 import SwiftUI
 import AVFoundation
 import Vision
